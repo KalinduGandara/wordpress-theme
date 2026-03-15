@@ -29,23 +29,21 @@
                 <h4 class="footer-heading">Quick Links</h4>
                 <ul class="footer-links">
                     <li><a href="<?php echo home_url('/'); ?>">Home</a></li>
-                    <li><a href="<?php echo home_url('/about/'); ?>">About Us</a></li>
-                    <li><a href="<?php echo home_url('/services/'); ?>">Our Services</a></li>
-                    <li><a href="<?php echo home_url('/admission/'); ?>">Admission</a></li>
-                    <li><a href="<?php echo home_url('/gallery/'); ?>">Gallery</a></li>
-                    <li><a href="<?php echo home_url('/contact/'); ?>">Contact Us</a></li>
+                    <li><a href="<?php echo serenity_page_url('about'); ?>">About Us</a></li>
+                    <li><a href="<?php echo serenity_page_url('services'); ?>">Our Services</a></li>
+                    <li><a href="<?php echo serenity_page_url('admission'); ?>">Admission</a></li>
+                    <li><a href="<?php echo serenity_page_url('gallery'); ?>">Gallery</a></li>
+                    <li><a href="<?php echo serenity_page_url('contact'); ?>">Contact Us</a></li>
                 </ul>
             </div>
 
             <div>
                 <h4 class="footer-heading">Our Services</h4>
                 <ul class="footer-links">
-                    <li><a href="<?php echo home_url('/services/'); ?>">Individual Therapy</a></li>
-                    <li><a href="<?php echo home_url('/services/'); ?>">Group Therapy</a></li>
-                    <li><a href="<?php echo home_url('/services/'); ?>">Family Counseling</a></li>
-                    <li><a href="<?php echo home_url('/services/'); ?>">Psychiatric Care</a></li>
-                    <li><a href="<?php echo home_url('/services/'); ?>">Substance Abuse</a></li>
-                    <li><a href="<?php echo home_url('/services/'); ?>">Holistic Wellness</a></li>
+                    <li><a href="<?php echo serenity_page_url('services'); ?>">All Services</a></li>
+                    <li><a href="<?php echo serenity_page_url('psychosocial-rehabilitation'); ?>">Psychosocial Rehabilitation</a></li>
+                    <li><a href="<?php echo serenity_page_url('counselling-service'); ?>">Counselling Service</a></li>
+                    <li><a href="<?php echo serenity_page_url('clinical-training'); ?>">Clinical &amp; Counselling Training</a></li>
                 </ul>
             </div>
 

@@ -15,8 +15,8 @@ get_header();
             <h1>Your Journey to <em>Healing</em> Starts Here</h1>
             <p>We provide compassionate, evidence-based residential treatment in a tranquil setting, helping individuals rediscover hope, resilience, and lasting well-being.</p>
             <div class="hero-buttons">
-                <a href="<?php echo home_url('/admission/'); ?>" class="btn btn-primary">Begin Your Recovery</a>
-                <a href="<?php echo home_url('/services/'); ?>" class="btn btn-secondary">Explore Our Programs</a>
+                <a href="<?php echo serenity_page_url('admission'); ?>" class="btn btn-primary">Begin Your Recovery</a>
+                <a href="<?php echo serenity_page_url('services'); ?>" class="btn btn-secondary">Explore Our Programs</a>
             </div>
         </div>
     </div>
@@ -56,7 +56,7 @@ get_header();
                 <h2>A Sanctuary for Healing &amp; Growth</h2>
                 <p>Nestled in a serene natural setting, Sandeepani Home offers a safe and nurturing environment where individuals can focus entirely on their recovery. Our multidisciplinary team of licensed professionals combines cutting-edge therapeutic approaches with compassionate care.</p>
                 <p>We believe that every person deserves the opportunity to heal. Our individualized treatment plans address the whole person — mind, body, and spirit — ensuring comprehensive and lasting recovery.</p>
-                <a href="<?php echo home_url('/about/'); ?>" class="btn btn-primary" style="margin-top: var(--spacing-md);">Learn More About Us</a>
+                <a href="<?php echo serenity_page_url('about'); ?>" class="btn btn-primary" style="margin-top: var(--spacing-md);">Learn More About Us</a>
             </div>
         </div>
     </div>
@@ -75,19 +75,19 @@ get_header();
                 <div class="service-icon">🧠</div>
                 <h3>Individual Therapy</h3>
                 <p>One-on-one sessions with licensed therapists using CBT, DBT, EMDR, and other proven modalities tailored to your unique needs.</p>
-                <a href="<?php echo home_url('/services/'); ?>" class="learn-more">Learn More →</a>
+                <a href="<?php echo serenity_page_url('services'); ?>" class="learn-more">Learn More →</a>
             </div>
             <div class="service-card fade-in">
                 <div class="service-icon">👥</div>
                 <h3>Group Therapy</h3>
                 <p>Supportive group sessions that foster connection, shared understanding, and collective healing in a safe, guided environment.</p>
-                <a href="<?php echo home_url('/services/'); ?>" class="learn-more">Learn More →</a>
+                <a href="<?php echo serenity_page_url('services'); ?>" class="learn-more">Learn More →</a>
             </div>
             <div class="service-card fade-in">
                 <div class="service-icon">🌿</div>
                 <h3>Holistic Wellness</h3>
                 <p>Yoga, meditation, art therapy, equine therapy, and nutritional counseling to nourish body and spirit alongside clinical treatment.</p>
-                <a href="<?php echo home_url('/services/'); ?>" class="learn-more">Learn More →</a>
+                <a href="<?php echo serenity_page_url('services'); ?>" class="learn-more">Learn More →</a>
             </div>
         </div>
     </div>
@@ -135,7 +135,7 @@ get_header();
             <h2>Ready to Take the First Step?</h2>
             <p>Our admissions team is available 24/7 to answer your questions and help you begin your journey to recovery.</p>
             <div style="display: flex; gap: var(--spacing-sm); justify-content: center; flex-wrap: wrap; position: relative;">
-                <a href="<?php echo home_url('/admission/'); ?>" class="btn btn-accent">Start Admission Process</a>
+                <a href="<?php echo serenity_page_url('admission'); ?>" class="btn btn-accent">Start Admission Process</a>
                 <a href="tel:5551234567" class="btn btn-secondary">Call (555) 123-4567</a>
             </div>
         </div>

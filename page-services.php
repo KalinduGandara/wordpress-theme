@@ -18,8 +18,39 @@ get_header();
     </div>
 </section>
 
-<!-- Services Detail -->
+<!-- Sub-Services Navigation -->
 <section class="section">
+    <div class="container">
+        <div class="section-header fade-in">
+            <span class="section-label">Specialized Services</span>
+            <h2>Explore Our Core Programs</h2>
+            <p>We offer three core specialized services designed to support recovery, personal growth, and professional development in mental health care.</p>
+        </div>
+        <div class="sub-services-grid">
+            <a href="<?php echo serenity_page_url('psychosocial-rehabilitation'); ?>" class="sub-service-card fade-in">
+                <div class="sub-service-icon">🏠</div>
+                <h3>Psychosocial Rehabilitation &amp; Residential Care</h3>
+                <p>Structured residential programs that help individuals rebuild daily living skills, social connections, and independence in a supportive environment.</p>
+                <span class="sub-service-link">Learn More &rarr;</span>
+            </a>
+            <a href="<?php echo serenity_page_url('counselling-service'); ?>" class="sub-service-card fade-in">
+                <div class="sub-service-icon">💬</div>
+                <h3>Counselling Service</h3>
+                <p>Professional, confidential counselling for individuals, couples, and families—helping you navigate life's challenges with expert guidance.</p>
+                <span class="sub-service-link">Learn More &rarr;</span>
+            </a>
+            <a href="<?php echo serenity_page_url('clinical-training'); ?>" class="sub-service-card fade-in">
+                <div class="sub-service-icon">🎓</div>
+                <h3>Clinical &amp; Counselling Training</h3>
+                <p>Professional development programs for aspiring and practicing mental health professionals—building the next generation of compassionate clinicians.</p>
+                <span class="sub-service-link">Learn More &rarr;</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Services Detail -->
+<section class="section section-alt">
     <div class="container">
         <div class="section-header fade-in">
             <span class="section-label">Treatment Programs</span>
@@ -104,7 +135,7 @@ get_header();
 </section>
 
 <!-- Treatment Approach -->
-<section class="section section-alt">
+<section class="section">
     <div class="container">
         <div class="section-header fade-in">
             <span class="section-label">Our Process</span>
@@ -138,7 +169,7 @@ get_header();
         <div class="cta-banner fade-in">
             <h2>Find the Right Program for You</h2>
             <p>Our admissions team will help determine the best treatment approach based on your individual needs.</p>
-            <a href="<?php echo home_url('/admission/'); ?>" class="btn btn-accent">Start Your Assessment</a>
+            <a href="<?php echo serenity_page_url('admission'); ?>" class="btn btn-accent">Start Your Assessment</a>
         </div>
     </div>
 </section>

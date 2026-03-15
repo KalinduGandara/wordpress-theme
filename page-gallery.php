@@ -83,7 +83,7 @@ get_header();
         <div class="cta-banner fade-in">
             <h2>Experience Sandeepani Home In Person</h2>
             <p>Schedule a private tour of our facility and see firsthand the warm, healing environment we've created.</p>
-            <a href="<?php echo home_url('/contact/'); ?>" class="btn btn-accent">Schedule a Tour</a>
+            <a href="<?php echo serenity_page_url('contact'); ?>" class="btn btn-accent">Schedule a Tour</a>
         </div>
     </div>
 </section>

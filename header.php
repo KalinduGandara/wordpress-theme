@@ -36,7 +36,7 @@
         ) ); ?>
 
         <div class="header-cta">
-            <a href="<?php echo home_url('/admission/'); ?>" class="btn btn-primary">Get Help Now</a>
+            <a href="<?php echo serenity_page_url('admission'); ?>" class="btn btn-primary">Get Help Now</a>
         </div>
 
         <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">

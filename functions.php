@@ -47,6 +47,22 @@ function serenity_get_page_template_slug($page_slug) {
     return 'page-' . $page_slug . '.php';
 }
 
+/**
+ * Get the permalink for a page by its slug.
+ * Uses get_page_by_path() to look up the actual page in the database,
+ * ensuring links work even if slugs or permalink structures change.
+ *
+ * @param string $slug The page slug.
+ * @return string The page URL, or home_url('/slug/') as fallback.
+ */
+function serenity_page_url( $slug ) {
+    $page = get_page_by_path( $slug );
+    if ( $page ) {
+        return esc_url( get_permalink( $page ) );
+    }
+    return esc_url( home_url( '/' . $slug . '/' ) );
+}
+
 // Add custom image sizes
 add_image_size('serenity-gallery', 600, 450, true);
 add_image_size('serenity-team', 400, 400, true);

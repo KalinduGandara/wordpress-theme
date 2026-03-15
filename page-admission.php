@@ -130,7 +130,7 @@ get_header();
             <p>Our admissions team is available 24 hours a day, 7 days a week. Call now for a free, confidential consultation.</p>
             <div style="display: flex; gap: var(--spacing-sm); justify-content: center; flex-wrap: wrap;">
                 <a href="tel:5551234567" class="btn btn-accent">Call (555) 123-4567</a>
-                <a href="<?php echo home_url('/contact/'); ?>" class="btn btn-secondary">Send Us a Message</a>
+                <a href="<?php echo serenity_page_url('contact'); ?>" class="btn btn-secondary">Send Us a Message</a>
             </div>
         </div>
     </div>
