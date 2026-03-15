@@ -115,7 +115,7 @@ get_header();
             <div class="faq-item">
                 <button class="faq-question">Is treatment confidential? <span class="faq-icon">+</span></button>
                 <div class="faq-answer">
-                    <p>Absolutely. All treatment at Serenity Haven is strictly confidential and protected by federal and state privacy laws, including HIPAA. Your information is never shared without your explicit written consent, except as required by law.</p>
+                    <p>Absolutely. All treatment at Sandeepani Home is strictly confidential and protected by federal and state privacy laws, including HIPAA. Your information is never shared without your explicit written consent, except as required by law.</p>
                 </div>
             </div>
         </div>

@@ -11,7 +11,7 @@ get_header();
 <section class="hero">
     <div class="container">
         <div class="hero-content fade-in">
-            <span class="hero-label">Welcome to Serenity Haven</span>
+            <span class="hero-label">Welcome to Sandeepani Home</span>
             <h1>Your Journey to <em>Healing</em> Starts Here</h1>
             <p>We provide compassionate, evidence-based residential treatment in a tranquil setting, helping individuals rediscover hope, resilience, and lasting well-being.</p>
             <div class="hero-buttons">
@@ -49,12 +49,12 @@ get_header();
     <div class="container">
         <div class="about-grid">
             <div class="about-image fade-in-left">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/about-preview.jpg" alt="Serenity Haven facility surrounded by nature">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/about-preview.jpg" alt="Sandeepani Home facility surrounded by nature">
             </div>
             <div class="about-content fade-in-right">
                 <span class="section-label">About Our Center</span>
                 <h2>A Sanctuary for Healing &amp; Growth</h2>
-                <p>Nestled in a serene natural setting, Serenity Haven offers a safe and nurturing environment where individuals can focus entirely on their recovery. Our multidisciplinary team of licensed professionals combines cutting-edge therapeutic approaches with compassionate care.</p>
+                <p>Nestled in a serene natural setting, Sandeepani Home offers a safe and nurturing environment where individuals can focus entirely on their recovery. Our multidisciplinary team of licensed professionals combines cutting-edge therapeutic approaches with compassionate care.</p>
                 <p>We believe that every person deserves the opportunity to heal. Our individualized treatment plans address the whole person — mind, body, and spirit — ensuring comprehensive and lasting recovery.</p>
                 <a href="<?php echo home_url('/about/'); ?>" class="btn btn-primary" style="margin-top: var(--spacing-md);">Learn More About Us</a>
             </div>
@@ -99,12 +99,12 @@ get_header();
         <div class="section-header fade-in">
             <span class="section-label">Testimonials</span>
             <h2>Stories of Hope &amp; Recovery</h2>
-            <p>Hear from those who have walked the path of healing at Serenity Haven.</p>
+            <p>Hear from those who have walked the path of healing at Sandeepani Home.</p>
         </div>
         <div class="testimonials-slider" id="testimonials-slider">
             <div class="testimonial-track" id="testimonial-track">
                 <div class="testimonial-card">
-                    <blockquote>"Serenity Haven gave me my life back. The caring staff and beautiful environment made all the difference in my recovery journey. I am forever grateful."</blockquote>
+                    <blockquote>"Sandeepani Home gave me my life back. The caring staff and beautiful environment made all the difference in my recovery journey. I am forever grateful."</blockquote>
                     <p class="testimonial-author">Sarah M.</p>
                     <p class="testimonial-role">Former Resident, 2024</p>
                 </div>
@@ -114,7 +114,7 @@ get_header();
                     <p class="testimonial-role">Former Resident, 2023</p>
                 </div>
                 <div class="testimonial-card">
-                    <blockquote>"The family program at Serenity Haven helped us heal together. We learned communication skills that strengthened our relationships and supported my daughter's recovery."</blockquote>
+                    <blockquote>"The family program at Sandeepani Home helped us heal together. We learned communication skills that strengthened our relationships and supported my daughter's recovery."</blockquote>
                     <p class="testimonial-author">Linda &amp; Robert K.</p>
                     <p class="testimonial-role">Family Members, 2024</p>
                 </div>

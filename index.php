@@ -10,7 +10,7 @@ get_header();
 <section class="page-hero">
     <div class="container">
         <h1 class="fade-in">Latest Updates</h1>
-        <p class="fade-in">News and insights from Serenity Haven Treatment Center.</p>
+        <p class="fade-in">News and insights from Sandeepani Home Treatment Center.</p>
     </div>
 </section>
 

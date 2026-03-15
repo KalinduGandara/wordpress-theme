@@ -12,23 +12,23 @@ Text Domain: serenity
 
 /* ===== CSS CUSTOM PROPERTIES ===== */
 :root {
-  --color-primary: #1a3a4a;
-  --color-primary-light: #245165;
-  --color-primary-dark: #0f2530;
-  --color-secondary: #5b9e8f;
-  --color-secondary-light: #7abfae;
-  --color-secondary-dark: #3d7a6c;
+  --color-primary: #1a2d4a;
+  --color-primary-light: #243d65;
+  --color-primary-dark: #0f1a30;
+  --color-secondary: #3b82c4;
+  --color-secondary-light: #5a9fd8;
+  --color-secondary-dark: #2a6299;
   --color-accent: #d4a853;
   --color-accent-light: #e6c87a;
   --color-accent-dark: #b8903d;
-  --color-bg: #f7f5f0;
-  --color-bg-alt: #efece5;
-  --color-bg-dark: #1a3a4a;
+  --color-bg: #f5f7fa;
+  --color-bg-alt: #e8ecf2;
+  --color-bg-dark: #1a2d4a;
   --color-text: #2c3e50;
   --color-text-light: #5a6d7e;
   --color-text-muted: #8a9bab;
   --color-white: #ffffff;
-  --color-border: #ddd8cc;
+  --color-border: #ccd5e0;
   --color-success: #27ae60;
   --color-error: #e74c3c;
   --font-heading: 'Playfair Display', Georgia, serif;

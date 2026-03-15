@@ -12,7 +12,7 @@
             <div class="footer-brand">
                 <a href="<?php echo home_url('/'); ?>" class="site-logo">
                     <div class="logo-text">
-                        Serenity Haven
+                        Sandeepani Home
                         <span>Treatment Center</span>
                     </div>
                 </a>
@@ -73,7 +73,7 @@
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; <?php echo date('Y'); ?> Serenity Haven Treatment Center. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            <p>&copy; <?php echo date('Y'); ?> Sandeepani Home Treatment Center. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
         </div>
     </div>
 </footer>

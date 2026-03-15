@@ -32,6 +32,16 @@ function serenity_scripts() {
 }
 add_action('wp_enqueue_scripts', 'serenity_scripts');
 
+// Prepend Home link to primary nav menu
+add_filter( 'wp_nav_menu_items', function( $items, $args ) {
+    if ( isset( $args->theme_location ) && $args->theme_location === 'primary' ) {
+        $home_class = is_front_page() ? ' class="current-menu-item"' : '';
+        $home_link  = '<li' . $home_class . '><a href="' . esc_url( home_url( '/' ) ) . '">Home</a></li>';
+        $items      = $home_link . $items;
+    }
+    return $items;
+}, 10, 2 );
+
 // Custom page template helper
 function serenity_get_page_template_slug($page_slug) {
     return 'page-' . $page_slug . '.php';

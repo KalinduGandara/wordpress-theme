@@ -11,7 +11,7 @@ get_header();
 <section class="page-hero">
     <div class="container">
         <h1 class="fade-in">About Us</h1>
-        <p class="fade-in">Discover our mission, meet our team, and learn what makes Serenity Haven a trusted leader in residential mental health care.</p>
+        <p class="fade-in">Discover our mission, meet our team, and learn what makes Sandeepani Home a trusted leader in residential mental health care.</p>
         <div class="breadcrumbs fade-in">
             <a href="<?php echo home_url('/'); ?>">Home</a> &nbsp;/&nbsp; <span>About Us</span>
         </div>
@@ -23,12 +23,12 @@ get_header();
     <div class="container">
         <div class="about-grid">
             <div class="about-image fade-in-left">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/mission.jpg" alt="Serenity Haven facility and gardens">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/mission.jpg" alt="Sandeepani Home facility and gardens">
             </div>
             <div class="about-content fade-in-right">
                 <span class="section-label">Our Mission</span>
                 <h2>Committed to Compassionate Care</h2>
-                <p>Founded in 2004, Serenity Haven was born from a vision to create a treatment center that combines clinical excellence with genuine compassion. Our founders — a team of psychiatrists, psychologists, and social workers — believed that healing happens best in an environment that feels like home.</p>
+                <p>Founded in 2004, Sandeepani Home was born from a vision to create a treatment center that combines clinical excellence with genuine compassion. Our founders — a team of psychiatrists, psychologists, and social workers — believed that healing happens best in an environment that feels like home.</p>
                 <p>Today, we continue that legacy by providing individualized, evidence-based treatment programs that address the root causes of mental health challenges. We serve adults of all backgrounds, creating a diverse and inclusive community of healing.</p>
                 <p>Our 20-acre campus, set among rolling hills and tranquil gardens, provides the perfect backdrop for reflection, growth, and renewal.</p>
             </div>
@@ -42,7 +42,7 @@ get_header();
         <div class="section-header fade-in">
             <span class="section-label">What Guides Us</span>
             <h2>Our Core Values</h2>
-            <p>These principles are the foundation of everything we do at Serenity Haven.</p>
+            <p>These principles are the foundation of everything we do at Sandeepani Home.</p>
         </div>
         <div class="values-grid">
             <div class="value-card fade-in">
@@ -120,7 +120,7 @@ get_header();
         <div class="section-header fade-in">
             <span class="section-label">Credentials</span>
             <h2>Accreditations &amp; Affiliations</h2>
-            <p>Serenity Haven meets the highest standards of quality and safety in behavioral healthcare.</p>
+            <p>Sandeepani Home meets the highest standards of quality and safety in behavioral healthcare.</p>
         </div>
         <div class="stats-grid fade-in" style="max-width: 800px; margin: 0 auto;">
             <div class="stat-item">
