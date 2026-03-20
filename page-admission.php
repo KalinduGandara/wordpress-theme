@@ -8,8 +8,7 @@ get_header();
 ?>
 
 <!-- Page Hero -->
-<section class="page-hero">
-    <div class="container">
+<?php get_template_part('template_part_hero') ?>
         <h1 class="fade-in">Admission</h1>
         <p class="fade-in">Taking the first step is the hardest — and the most courageous. We're here to make the process simple and supportive.</p>
         <div class="breadcrumbs fade-in">
@@ -30,52 +29,45 @@ get_header();
             <div class="admission-step fade-in">
                 <div class="step-number">1</div>
                 <div class="step-content">
-                    <h3>Initial Contact</h3>
-                    <p>Call our 24/7 admissions line at (555) 123-4567 or fill out our confidential online form. Our compassionate admissions coordinators are ready to answer your questions and discuss your situation.</p>
+                    <h3>Schedule an Initial Interview</h3>
+                    <p>Please make an appointment with our Psychologist for an initial interview with the patient. This helps us understand the patient's needs and determine the most suitable course of care.</p>
                 </div>
             </div>
             <div class="admission-step fade-in">
                 <div class="step-number">2</div>
                 <div class="step-content">
-                    <h3>Pre-Assessment</h3>
-                    <p>A licensed clinician conducts a confidential phone assessment to understand your needs, determine the appropriate level of care, and answer any clinical questions about our programs.</p>
+                    <h3>Collect the Application Kit</h3>
+                    <p>Kindly collect the application kit from our office at your earliest convenience. Our staff will be happy to guide you through the required forms and documentation.</p>
                 </div>
             </div>
             <div class="admission-step fade-in">
                 <div class="step-number">3</div>
                 <div class="step-content">
-                    <h3>Insurance Verification</h3>
-                    <p>Our team handles all insurance verification and authorization. We accept most major insurance providers and will work with you to understand your benefits and coverage.</p>
+                    <h3>Obtain Psychiatric Recommendation</h3>
+                    <p>Please obtain a formal psychiatric recommendation from the patient's treating psychiatrist. This recommendation is an essential requirement for proceeding with the admission process.</p>
                 </div>
             </div>
             <div class="admission-step fade-in">
                 <div class="step-number">4</div>
                 <div class="step-content">
-                    <h3>Arrival &amp; Welcome</h3>
-                    <p>Upon arrival, you'll be warmly welcomed by our team. We'll complete a comprehensive intake assessment, orient you to the facility, and begin developing your personalized treatment plan.</p>
+                    <h3>Confirm the Admission Date</h3>
+                    <p>Once all documentation is in order, please contact us by telephone to confirm and schedule the admission date. Our team will work with you to find the most convenient time.</p>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-
-<!-- Insurance -->
-<section class="section section-alt">
-    <div class="container">
-        <div class="section-header fade-in">
-            <span class="section-label">Coverage</span>
-            <h2>Insurance We Accept</h2>
-            <p>We work with most major insurance providers. If you don't see yours listed, please contact us — we'll do our best to help.</p>
-        </div>
-        <div class="insurance-grid fade-in">
-            <div class="insurance-item">Blue Cross Blue Shield</div>
-            <div class="insurance-item">Aetna</div>
-            <div class="insurance-item">Cigna</div>
-            <div class="insurance-item">UnitedHealthcare</div>
-            <div class="insurance-item">Humana</div>
-            <div class="insurance-item">Kaiser Permanente</div>
-            <div class="insurance-item">Anthem</div>
-            <div class="insurance-item">Tricare</div>
+            <div class="admission-step fade-in">
+                <div class="step-number">5</div>
+                <div class="step-content">
+                    <h3>Trial Period Admission</h3>
+                    <p>The patient will be admitted for an initial trial period, during which our clinical team will carefully observe and assess their progress to ensure the best possible care and comfort.</p>
+                </div>
+            </div>
+            <div class="admission-step fade-in">
+                <div class="step-number">6</div>
+                <div class="step-content">
+                    <h3>Admission Days &amp; Special Requests</h3>
+                    <p>Admissions are conducted on weekdays only. If you require admission on a weekend, a special request must be submitted in advance, and please note that an additional fee will apply for weekend admissions.</p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -126,10 +118,10 @@ get_header();
 <section class="section section-dark">
     <div class="container">
         <div class="cta-banner fade-in" style="background: transparent; padding: 0;">
-            <h2>Ready to Get Started?</h2>
-            <p>Our admissions team is available 24 hours a day, 7 days a week. Call now for a free, confidential consultation.</p>
+            <h2>Need More Information?</h2>
+            <p>For more information, please feel free to call us on the following number or send us a message — we are happy to assist you.</p>
             <div style="display: flex; gap: var(--spacing-sm); justify-content: center; flex-wrap: wrap;">
-                <a href="tel:5551234567" class="btn btn-accent">Call (555) 123-4567</a>
+                <a href="tel:0112937275" class="btn btn-accent">Call 011 2 937 275</a>
                 <a href="<?php echo serenity_page_url('contact'); ?>" class="btn btn-secondary">Send Us a Message</a>
             </div>
         </div>

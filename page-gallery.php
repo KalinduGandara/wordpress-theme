@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Template Name: Gallery
  *
@@ -8,10 +9,9 @@ get_header();
 ?>
 
 <!-- Page Hero -->
-<section class="page-hero">
-    <div class="container">
+<?php get_template_part('template_part_hero') ?>
         <h1 class="fade-in">Gallery</h1>
-        <p class="fade-in">Take a virtual tour of our beautiful campus, comfortable living spaces, and therapeutic environments.</p>
+        <p class="fade-in">Take a virtual tour of our beautiful institute, comfortable living spaces, and therapeutic environments.</p>
         <div class="breadcrumbs fade-in">
             <a href="<?php echo home_url('/'); ?>">Home</a> &nbsp;/&nbsp; <span>Gallery</span>
         </div>
@@ -21,7 +21,27 @@ get_header();
 <!-- Gallery -->
 <section class="section">
     <div class="container">
-        <div class="gallery-filters fade-in">
+        <?php
+        // Get the images from the custom field we created
+        $gallery_images = rwmb_meta('my_custom_gallery', ['size' => 'large']);
+
+        if (!empty($gallery_images)) { ?>
+
+            <div class="gallery-grid" id="gallery-grid">
+
+                <?php foreach ($gallery_images as $image) : ?>
+                     <div class="gallery-item fade-in" onclick="openLightbox(0)">
+                        <div href="<?php echo esc_url($image['full_url']); ?>">
+                            <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
+                            <div class="gallery-overlay"><span><?php echo esc_html($image['title']); ?></span></div>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+
+            </div>
+
+        <?php } ?>
+        <!-- <div class="gallery-filters fade-in">
             <button class="filter-btn active" data-filter="all">All</button>
             <button class="filter-btn" data-filter="facility">Facility</button>
             <button class="filter-btn" data-filter="rooms">Living Spaces</button>
@@ -65,7 +85,7 @@ get_header();
                 <img src="<?php echo get_template_directory_uri(); ?>/images/gallery-9.jpg" alt="Dining area">
                 <div class="gallery-overlay"><span>Dining Hall</span></div>
             </div>
-        </div>
+        </div> -->
     </div>
 </section>
 

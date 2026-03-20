@@ -8,8 +8,7 @@ get_header();
 ?>
 
 <!-- Page Hero -->
-<section class="page-hero">
-    <div class="container">
+<?php get_template_part('template_part_hero') ?>
         <h1 class="fade-in">Contact Us</h1>
         <p class="fade-in">We're here to help. Reach out to our team for questions, admissions, or to schedule a visit.</p>
         <div class="breadcrumbs fade-in">
@@ -32,21 +31,21 @@ get_header();
                         <div class="contact-icon">📍</div>
                         <div>
                             <h4>Our Location</h4>
-                            <p>1234 Serenity Lane<br>Peaceful Valley, CA 90210</p>
+                            <p>103/A, St.Marys Road, Uswetakeiyawa.</p>
                         </div>
                     </div>
                     <div class="contact-info-card">
                         <div class="contact-icon">📞</div>
                         <div>
                             <h4>Phone</h4>
-                            <p>Admissions: (555) 123-4567<br>General: (555) 123-4568</p>
+                            <p>011 29 41 989<br>011 29 37 275</p>
                         </div>
                     </div>
                     <div class="contact-info-card">
                         <div class="contact-icon">✉️</div>
                         <div>
                             <h4>Email</h4>
-                            <p>info@serenityhaven.com<br>admissions@serenityhaven.com</p>
+                            <p>sandeepanihome@yahoo.com</p>
                         </div>
                     </div>
                     <div class="contact-info-card">
@@ -59,44 +58,21 @@ get_header();
                 </div>
 
                 <div class="map-container" style="margin-top: var(--spacing-lg);">
-                    <p>📍 Map — Integrate Google Maps here</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1048.8155892668708!2d79.8611839656101!3d7.032708976380102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2f700302c4e1b%3A0xbeacf9334a4f2aaf!2sSandeepani%20Home%20Uk!5e0!3m2!1sen!2slk!4v1774009610204!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
 
             <div class="contact-form fade-in-right">
                 <h3 style="margin-bottom: var(--spacing-lg);">Send Us a Message</h3>
                 <form id="contact-form" action="#" method="post">
-                    <div class="form-row">
                         <div class="form-group">
-                            <label for="first-name">First Name *</label>
-                            <input type="text" id="first-name" name="first_name" required>
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
                         </div>
                         <div class="form-group">
-                            <label for="last-name">Last Name *</label>
-                            <input type="text" id="last-name" name="last_name" required>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="email">Email *</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone</label>
+                            <label for="phone">Phone *</label>
                             <input type="tel" id="phone" name="phone">
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="inquiry-type">Inquiry Type</label>
-                        <select id="inquiry-type" name="inquiry_type">
-                            <option value="">Select an option</option>
-                            <option value="admissions">Admissions Information</option>
-                            <option value="insurance">Insurance & Billing</option>
-                            <option value="tour">Schedule a Tour</option>
-                            <option value="family">Family Support</option>
-                            <option value="general">General Inquiry</option>
-                        </select>
-                    </div>
                     <div class="form-group">
                         <label for="message">Message *</label>
                         <textarea id="message" name="message" rows="5" required placeholder="How can we help you?"></textarea>
@@ -105,19 +81,6 @@ get_header();
                     <p style="font-size: var(--font-size-xs); color: var(--color-text-muted); margin-top: var(--spacing-sm); text-align: center;">All inquiries are 100% confidential. We respect your privacy.</p>
                 </form>
             </div>
-        </div>
-    </div>
-</section>
-
-<!-- Emergency CTA -->
-<section class="section section-dark">
-    <div class="container text-center fade-in">
-        <span class="section-label">Crisis Support</span>
-        <h2>Need Immediate Help?</h2>
-        <p style="color: rgba(255,255,255,0.8); max-width: 600px; margin: 0 auto var(--spacing-lg);">If you or someone you know is in immediate danger, please call 911 or the Suicide &amp; Crisis Lifeline.</p>
-        <div style="display: flex; gap: var(--spacing-sm); justify-content: center; flex-wrap: wrap;">
-            <a href="tel:911" class="btn btn-accent">Call 911</a>
-            <a href="tel:988" class="btn btn-secondary">Call 988 Lifeline</a>
         </div>
     </div>
 </section>

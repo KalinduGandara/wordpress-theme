@@ -19,7 +19,9 @@
 <header class="site-header" id="site-header">
     <div class="header-inner">
         <a href="<?php echo home_url('/'); ?>" class="site-logo">
-            <div class="logo-icon">S</div>
+            <div class="logo-icon">
+                <img src="http://test2.local/wp-content/uploads/2026/03/logo_new.jpg" alt="Sandeepani Home Logo">
+            </div>
             <div class="logo-text">
                 Sandeepani Home
                 <span>Treatment Center</span>

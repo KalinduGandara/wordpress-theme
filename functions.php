@@ -67,3 +67,65 @@ function serenity_page_url( $slug ) {
 add_image_size('serenity-gallery', 600, 450, true);
 add_image_size('serenity-team', 400, 400, true);
 add_image_size('serenity-hero', 1920, 1080, true);
+
+
+add_filter( 'rwmb_meta_boxes', 'my_theme_register_gallery_meta_box' );
+
+function my_theme_register_gallery_meta_box( $meta_boxes ) {
+    $meta_boxes[] = [
+        'title'      => 'Page Image Gallery',
+        'post_types' => 'page', // Shows up on Pages
+        'fields'     => [
+            [
+                'name' => 'Select Gallery Images',
+                'id'   => 'my_custom_gallery',
+                'type' => 'image_advanced', // This allows selecting multiple images
+            ],
+        ],
+    ];
+    return $meta_boxes;
+}
+
+// Register Background Image & Hero Image metabox
+add_filter( 'rwmb_meta_boxes', 'serenity_register_page_images_meta_box' );
+
+function serenity_register_page_images_meta_box( $meta_boxes ) {
+    $meta_boxes[] = [
+        'title'      => 'Page Images',
+        'id'         => 'serenity_page_images',
+        'post_types' => 'page',
+        'context'    => 'normal',
+        'priority'   => 'high',
+        'fields'     => [
+            [
+                'name'             => 'Background Image',
+                'id'               => 'page_background_image',
+                'type'             => 'single_image',
+                'desc'             => 'Select a background image for this page.',
+                'max_file_uploads' => 1,
+                'force_delete'     => false,
+            ],
+            [
+                'name'             => 'Hero Image',
+                'id'               => 'page_hero_image',
+                'type'             => 'single_image',
+                'desc'             => 'Select a hero/banner image displayed at the top of this page.',
+                'max_file_uploads' => 1,
+                'force_delete'     => false,
+            ],
+        ],
+    ];
+    return $meta_boxes;
+}
+
+function serenity_get_metabox_image_urls($metaName, $data ) {
+    $image = rwmb_meta( $metaName, $data );
+    if ( empty( $image ) ) {
+        return '';
+    }
+    return esc_url($image["full_url"]);
+}
+
+
+
+

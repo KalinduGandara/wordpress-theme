@@ -17,12 +17,6 @@
                     </div>
                 </a>
                 <p>Providing compassionate, evidence-based residential treatment for mental health and substance use disorders. Begin your journey to recovery in our tranquil, supportive environment.</p>
-                <div class="footer-social">
-                    <a href="#" class="social-link" aria-label="Facebook">f</a>
-                    <a href="#" class="social-link" aria-label="Twitter">t</a>
-                    <a href="#" class="social-link" aria-label="Instagram">i</a>
-                    <a href="#" class="social-link" aria-label="LinkedIn">in</a>
-                </div>
             </div>
 
             <div>
@@ -38,29 +32,19 @@
             </div>
 
             <div>
-                <h4 class="footer-heading">Our Services</h4>
-                <ul class="footer-links">
-                    <li><a href="<?php echo serenity_page_url('services'); ?>">All Services</a></li>
-                    <li><a href="<?php echo serenity_page_url('psychosocial-rehabilitation'); ?>">Psychosocial Rehabilitation</a></li>
-                    <li><a href="<?php echo serenity_page_url('counselling-service'); ?>">Counselling Service</a></li>
-                    <li><a href="<?php echo serenity_page_url('clinical-training'); ?>">Clinical &amp; Counselling Training</a></li>
-                </ul>
-            </div>
-
-            <div>
                 <h4 class="footer-heading">Contact Info</h4>
                 <ul class="footer-contact">
                     <li>
                         <span class="icon">📍</span>
-                        <span>1234 Serenity Lane,<br>Peaceful Valley, CA 90210</span>
+                        <span>103/A, St.Marys Road, Uswetakeiyawa.</span>
                     </li>
                     <li>
                         <span class="icon">📞</span>
-                        <span>(555) 123-4567</span>
+                        <span>011 29 41 989</span>
                     </li>
                     <li>
                         <span class="icon">✉️</span>
-                        <span>info@serenityhaven.com</span>
+                        <span>sandeepanihome@yahoo.com</span>
                     </li>
                     <li>
                         <span class="icon">🕐</span>
