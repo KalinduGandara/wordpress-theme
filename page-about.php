@@ -16,13 +16,13 @@ get_header();
         </div>
     </div>
 </section>
-
+<?php $hero_url = serenity_get_metabox_image_urls('page_hero_image', []); ?>
 <!-- Mission Section -->
 <section class="section">
     <div class="container">
         <div class="about-grid">
             <div class="about-image fade-in-left">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/mission.jpg" alt="Sandeepani Home facility and gardens">
+                <img src="<?php if ( $hero_url ) echo esc_url( $hero_url ); ?>" alt="Sandeepani Home facility and gardens">
             </div>
             <div class="about-content fade-in-right">
                 <span class="section-label">Our Mission</span>

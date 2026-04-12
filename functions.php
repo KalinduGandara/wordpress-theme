@@ -126,6 +126,21 @@ function serenity_get_metabox_image_urls($metaName, $data ) {
     return esc_url($image["full_url"]);
 }
 
+// Customizer: Site Logo Image
+function serenity_customize_register( $wp_customize ) {
+    $wp_customize->add_setting( 'serenity_logo_image', array(
+        'default'           => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'serenity_logo_image', array(
+        'label'   => __( 'Site Logo Image', 'serenity' ),
+        'section' => 'title_tagline',
+        'settings' => 'serenity_logo_image',
+    ) ) );
+}
+add_action( 'customize_register', 'serenity_customize_register' );
+
 
 
 
