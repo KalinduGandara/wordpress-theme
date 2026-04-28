@@ -16,7 +16,8 @@ get_header();
         </div>
     </div>
 </section>
-<?php $hero_url = serenity_get_metabox_image_urls('page_hero_image', []); ?>
+<?php $hero_url = serenity_get_metabox_image_url('page_hero_image', []); ?>
+<?php $secondary_images = serenity_get_metabox_image_urls('page_secondary_images', []); ?>
 <!-- Mission Section -->
 <section class="section">
     <div class="container">
@@ -24,6 +25,7 @@ get_header();
             <div class="about-image fade-in-left">
                 <img src="<?php if ( $hero_url ) echo esc_url( $hero_url ); ?>" alt="Sandeepani Home facility and gardens">
             </div>
+            
             <div class="about-content fade-in-right">
                 <span class="section-label">Our Mission</span>
                 <h2>Committed to Compassionate Care</h2>
@@ -36,5 +38,19 @@ get_header();
         </div>
     </div>
 </section>
+
+<?php if ( ! empty( $secondary_images ) ) : ?>
+<section class="section">
+    <div class="container">
+        <div class="about-grid">
+            <?php foreach ( $secondary_images as $secondary_image ) : ?>
+                <div class="about-image fade-in-left">
+                    <img src="<?php echo esc_url( $secondary_image ); ?>" alt="Sandeepani Home additional facility view">
+                </div>
+            <?php endforeach; ?>
+        </div>
+    </div>
+</section>
+<?php endif; ?>
 
 <?php get_footer(); ?>

@@ -113,17 +113,34 @@ function serenity_register_page_images_meta_box( $meta_boxes ) {
                 'max_file_uploads' => 1,
                 'force_delete'     => false,
             ],
+            [
+                'name'             => 'Secondary Images',
+                'id'               => 'page_secondary_images',
+                'type'             => 'image_advanced',
+                'desc'             => 'Select one or more secondary images for this page.',
+                'force_delete'     => false,
+            ],
         ],
     ];
     return $meta_boxes;
 }
 
-function serenity_get_metabox_image_urls($metaName, $data ) {
+function serenity_get_metabox_image_url($metaName, $data ) {
     $image = rwmb_meta( $metaName, $data );
     if ( empty( $image ) ) {
         return '';
     }
     return esc_url($image["full_url"]);
+}
+
+function serenity_get_metabox_image_urls($metaName, $data ) {
+    $images = rwmb_meta( $metaName, $data );
+    if ( empty( $images ) || ! is_array( $images ) ) {
+        return [];
+    }
+    return array_map( function( $image ) {
+        return esc_url( $image['full_url'] );
+    }, $images );
 }
 
 // Customizer: Site Logo Image

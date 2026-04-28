@@ -7,8 +7,8 @@
 get_header();
 ?>
 
-<?php $hero_url = serenity_get_metabox_image_urls('page_hero_image', []); ?>
-<?php $bg_url = serenity_get_metabox_image_urls('page_background_image', []); ?>
+<?php $hero_url = serenity_get_metabox_image_url('page_hero_image', []); ?>
+<?php $bg_url = serenity_get_metabox_image_url('page_background_image', []); ?>
 
 
 <!-- Hero Section -->

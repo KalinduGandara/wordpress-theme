@@ -113,27 +113,6 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
-
-    // ===== CONTACT FORM HANDLER =====
-    var contactForm = document.getElementById('contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function (e) {
-            e.preventDefault();
-            var btn = this.querySelector('button[type="submit"]');
-            btn.textContent = 'Sending...';
-            btn.disabled = true;
-            setTimeout(function () {
-                btn.textContent = '✓ Message Sent!';
-                btn.style.background = 'var(--color-success)';
-                setTimeout(function () {
-                    btn.textContent = 'Send Message';
-                    btn.style.background = '';
-                    btn.disabled = false;
-                    contactForm.reset();
-                }, 3000);
-            }, 1500);
-        });
-    }
 });
 
 // ===== LIGHTBOX (Global functions for inline onclick) =====
