@@ -38,7 +38,7 @@ if ( 'POST' === strtoupper( wp_unslash( $_SERVER['REQUEST_METHOD'] ) ) && isset(
 			$has_error         = true;
 		} else {
 			// 4. Prepare email
-			$to      = get_option( 'admin_email' );
+			$to      = serenity_get_contact_email();
 			$subject = sprintf(
 				/* translators: %s: sender name */
 				__( 'New Contact Form Submission from %s', 'serenity' ),
@@ -92,7 +92,7 @@ get_template_part( 'template-parts/hero', null, array(
 						<div class="contact-icon">📍</div>
 						<div>
 							<h4><?php esc_html_e( 'Our Location', 'serenity' ); ?></h4>
-							<p><?php esc_html_e( '103/A, St.Marys Road, Uswetakeiyawa.', 'serenity' ); ?></p>
+							<p><?php esc_html_e( '102C, Vijaya Kumarathunga Mawatha, Uswetakeiyawa.', 'serenity' ); ?></p>
 						</div>
 					</div>
 					<div class="contact-info-card">

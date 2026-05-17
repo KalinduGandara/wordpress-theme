@@ -40,7 +40,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<ul class="footer-contact">
 					<li>
 						<span class="icon">📍</span>
-						<span><?php esc_html_e( '103/A, St.Marys Road, Uswetakeiyawa.', 'serenity' ); ?></span>
+						<span><?php esc_html_e( '102C, Vijaya Kumarathunga Mawatha, Uswetakeiyawa.', 'serenity' ); ?></span>
 					</li>
 					<li>
 						<span class="icon">📞</span>

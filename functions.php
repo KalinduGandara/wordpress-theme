@@ -190,5 +190,38 @@ function serenity_customize_register( $wp_customize ) {
 		'section'  => 'title_tagline',
 		'settings' => 'serenity_logo_image',
 	) ) );
+
+	$wp_customize->add_section( 'serenity_contact_settings', array(
+		'title'    => __( 'Contact Form', 'serenity' ),
+		'priority' => 130,
+	) );
+
+	$wp_customize->add_setting( 'serenity_contact_email', array(
+		'default'           => '',
+		'sanitize_callback' => 'sanitize_email',
+	) );
+
+	$wp_customize->add_control( 'serenity_contact_email', array(
+		'label'       => __( 'Contact Form Recipient Email', 'serenity' ),
+		'description' => __( 'Email address that receives contact form submissions. Leave blank to use the site admin email.', 'serenity' ),
+		'section'     => 'serenity_contact_settings',
+		'type'        => 'email',
+	) );
 }
 add_action( 'customize_register', 'serenity_customize_register' );
+
+/**
+ * Return the recipient email for contact form submissions.
+ *
+ * Falls back to the site admin email when the Customizer value is empty
+ * or not a valid email address.
+ *
+ * @return string
+ */
+function serenity_get_contact_email() {
+	$email = get_theme_mod( 'serenity_contact_email', '' );
+	if ( ! empty( $email ) && is_email( $email ) ) {
+		return $email;
+	}
+	return get_option( 'admin_email' );
+}
