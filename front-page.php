@@ -13,6 +13,7 @@ get_header();
 
 $hero_url = serenity_get_metabox_image_url( 'page_hero_image', array() );
 $bg_url   = serenity_get_metabox_image_url( 'page_background_image', array() );
+$secondary_images = serenity_get_metabox_image_urls( 'page_secondary_images', array() );
 
 $hero_style = '';
 if ( $bg_url ) {
@@ -64,6 +65,14 @@ if ( $bg_url ) {
 			<?php if ( $hero_url ) : ?>
 			<div class="about-image fade-in-left">
 				<img src="<?php echo esc_url( $hero_url ); ?>" alt="<?php esc_attr_e( 'Sandeepani Home facility surrounded by nature', 'serenity' ); ?>" loading="lazy">
+				<br/>
+				<?php if ( ! empty( $secondary_images ) ) : ?>
+					<?php foreach ( $secondary_images as $secondary_image ) : ?>
+						<div class="about-image fade-in-left">
+							<img src="<?php echo esc_url( $secondary_image ); ?>" alt="<?php esc_attr_e( 'Sandeepani Home services facility view', 'serenity' ); ?>" loading="lazy">
+						</div>
+					<?php endforeach; ?>
+				<?php endif; ?>
 			</div>
 			<?php endif; ?>
 			<div class="about-content fade-in-right">
